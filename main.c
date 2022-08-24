@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-#define ROW_LENGTH 60
-#define ITTERATIONS 60
+                                                                                                                              
+#define ROW_LENGTH 138
+#define ITTERATIONS 21 
 
 typedef enum Cell {
     I,
