@@ -75,7 +75,16 @@ void border()
 
 int main()
 {
-    srand(time(0));
+    time_t now;
+    struct tm *tm;
+
+    now = time(0);
+    if ((tm = localtime (&now)) == NULL) {
+        printf ("error: something whent wrong\n");
+        exit(1);
+    }
+    
+    srand(tm->tm_sec);
     border();
 
     Row curr = {0};
